@@ -2,17 +2,17 @@ import { useState } from 'react'
 import { View, Text, TextInput, Pressable, StyleSheet } from 'react-native'
 
 export default function ResetPassword({ handleLogout , changePassword}) {
-  const [newPassword, setNewPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('')
 
   const handleResetPassword = () => {
     if (newPassword) {
-      changePassword(newPassword);
+      changePassword(newPassword)
       alert('Senha redefinida com sucesso!');
-      handleLogout();
+      handleLogout()
     } else {
-      alert('Por favor, digite a nova senha.');
+      alert('Por favor, digite a nova senha.')
     }
-  };
+  }
 
   return (
     <View style={styles.container}>
