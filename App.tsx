@@ -28,7 +28,7 @@ export default function App() {
       setEmail("")
       setPassword("")
     }else if(email === userEmail && password === userPassword){
-      alert("Bem vindo magnata Jovêncio")
+      alert(`Bem vindo magnata ${userName}`)
       setUser(true)
       setLogged(true)
       setEmail("")
